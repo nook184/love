@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>คิดถึงแฟนเน้อ 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* ... รักษาสไตล์เดิมไว้เหมือนของคุณ ... */
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #ffe6f0, #fff9fc);
+      font-family: 'Mali', cursive;
+      overflow-x: hidden;
+      cursor: pointer; /* ให้รู้ว่าคลิกได้ */
+    }
+    /* ... ที่เหลือเหมือนเดิม ... */
+    h1 {
+      font-size: 3rem;
+      color: #ff4d88;
+      animation: pop 1s infinite alternate;
+      text-align: center;
+      padding-top: 40px;
+    }
+    .message {
+      font-size: 1.4rem;
+      color: #444;
+      max-width: 750px;
+      margin: 30px auto;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 15px #ffb6c1;
+      line-height: 2.2;
+      text-align: center;
+    }
+    img {
+      width: 200px;
+      display: block;
+      margin: 40px auto 0;
+      animation: wiggle 1.5s infinite;
+    }
+
+    /* หัวใจลอย */
+    .heart {
+      position: fixed;
+      width: 20px;
+      height: 20px;
+      background: pink;
+      transform: rotate(45deg);
+      animation: float 8s linear infinite;
+      opacity: 0.8;
+      z-index: 0;
+    }
+    .heart::before,
+    .heart::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: pink;
+      border-radius: 50%;
+    }
+    .heart::before {
+      top: -10px;
+      left: 0;
+    }
+    .heart::after {
+      left: -10px;
+      top: 0;
+    }
+    @keyframes float {
+      0% {
+        transform: translateY(0) rotate(45deg);
+        opacity: 0.8;
+      }
+      100% {
+        transform: translateY(-100vh) rotate(45deg);
+        opacity: 0;
+      }
+    }
+    @keyframes wiggle {
+      0% { transform: rotate(-3deg); }
+      50% { transform: rotate(3deg); }
+      100% { transform: rotate(-3deg); }
+    }
+    @keyframes pop {
+      from { transform: scale(1); }
+      to { transform: scale(1.05); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- หัวใจลอยหลายดวง -->
+  <script>
+    for (let i = 0; i < 20; i++) {
+      const heart = document.createElement("div");
+      heart.classList.add("heart");
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.animationDuration = (5 + Math.random() * 5) + "s";
+      heart.style.width = heart.style.height = (10 + Math.random() * 15) + "px";
+      document.body.appendChild(heart);
+    }
+  </script>
+
+  <h1>คิดถึงแฟนขนาดเน้อ 💖</h1>
+
+  <div class="message">
+    ตะวานี้เปิ้ลก่อคึดเติงแหมแล้วเน้อ<br>
+    ใจ๋มันลอยไปหาตั๋วตั้งแต่นาฬิกาปลุกตอนเจ๊าแล้ว<br>
+    ตอนได๋บ่ะได้คุยกั๋น ใจก่อเหงา ๆ เหมือนขาดหยังไปสักอย่าง<br><br>
+
+    คึดเติงหาตลอดเวลา บ่ะหื้อห่างจากใจ๋เลย<br>
+    บางครั้งแค่ได้เห็นตั๋วตอบ ก่อใจ๋ฟูละ 🥹<br>
+    อยากฮู้ว่าฮักตั๋วขนาดไหน ฮู้ก่อ?<br><br>
+
+    เวลาตั๋วหัวเราะ ใจ๋ก่อหัวเราะโตย<br>
+    เวลาตั๋วเศร้า ใจก่ออยากวิ่งไปกอดให้แน่น ๆ<br>
+    ถ้าตั๋วเหนื่อย อยากหื้อจำไว้ว่า… ยังมีเปิ้ลคนนี้อยู่ข้างๆ เสมอ<br><br>
+
+    ถึงบ่ะได้อยู่ใกล้กันตลอดเวลา<br>
+    แต่ใจ๋เปิ้ลอยู่ข้างตั๋วตลอดละเน้อ 💞<br>
+    ฮักตั๋วที่สุดเลยนะเจ้า คึดเติงหาขนาด อยากกอดแน่น ๆ ซัก 10 ที<br><br>
+
+    อยากฝากลมหื้อไปบอก ตั๋วฮื้อใจ๋ตั๋วบ่ะเหงา<br>
+    ฝากฟ้าตอนค่ำ บอกฮักก่อนนอน<br>
+    ฝากดาวบนฟ้า ฮื้อเฮาได้ฝันดีโตยกัน ✨<br><br>
+
+    รักน้าาาาา~ จากใจ๋คนคึดเติงหาตั๋ว ❤️<br>
+  </div>
+
+  <img src="https://media.tenor.com/yipW0XdmrMkAAAAi/shin-chan-kiss-my-ass.gif" alt="ชินจังน่ารัก">
+
+  <!-- ลบปุ่มออก -->
+
+  <audio id="bg-music" loop>
+    <source src="https://youtu.be/KB0_PRE80MM?si=GvBcf4_I7sGj7S8e" type="audio/mpeg">
+    Browser ของคุณไม่รองรับเสียง
+  </audio>
+
+  <script>
+    // เล่นเพลงเมื่อ user คลิกที่หน้าเว็บครั้งแรก (เพื่อปลดล็อกเสียง autoplay)
+    function playMusicOnUserInteraction() {
+      const music = document.getElementById('bg-music');
+      function play() {
+        music.play().catch(() => {
+          console.log('เพลงเล่นไม่ได้ อาจถูกบล็อก autoplay');
+        });
+        // ลบ event listener หลังเล่นแล้ว
+        window.removeEventListener('click', play);
+      }
+      window.addEventListener('click', play);
+    }
+    playMusicOnUserInteraction();
+  </script>
+
+</body>
+</html>
